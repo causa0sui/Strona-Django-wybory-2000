@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+
+    <script type="text/javascript">
+        var dane = [
+            ['Kandydat', 'Liczba głosów'],
+            
+        ['Dariusz Maciej GRABOWSKI', 236],
+        
+        ['Piotr IKONOWICZ', 38],
+        
+        ['Jarosław KALINOWSKI', 2537],
+        
+        ['Marian KRZAKLEWSKI', 7323],
+        
+        ['Aleksander KWAŚNIEWSKI', 10051],
+        
+        ['Andrzej LEPPER', 1542],
+        
+        ['Jan ŁOPUSZAŃSKI', 295],
+        
+        ['Andrzej Marian OLECHOWSKI', 3876],
+        
+        ['Bogdan PAWŁOWSKI', 39],
+        
+        ['Lech WAŁĘSA', 235],
+        
+        ['Tadeusz Adam WILECKI', 147],
+        
+        ['Janusz KORWIN-MIKKE', 332],
+        
+        ];
+
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable(dane);
+
+            var options = {
+                title: 'Wykres kołowy',
+                backgroundColor: 'transparent',
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+
+    <title>
+        Powiat niżański
+    </title>
+</head>
+<body>
+<header class="jumbotron">
+    <div class="container">
+         <h1>Wybory Prezydenta RP roku 2000</h1>
+    </div>
+</header>
+<article>
+    <section>
+        <h2 class="tytul">
+            Wyniki kandydatów w powiecie niżański
+        </h2>
+
+        <div class="two-lines-top">
+            <div id="piechart"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>
+            Statystyka ogółem w powiecie
+        </h2>
+        <div class="table">
+            <table>
+                <tr>
+                    <td>
+                        Liczba uprawnionych do głosowania
+                    </td>
+                    <td>
+                        48567
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba wydanych kart do głosowania
+                    </td>
+                    <td>
+                        27087
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba kart wyjętych z urny
+                    </td>
+                    <td>
+                        27083
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba ważnych głosów
+                    </td>
+                    <td>
+                        26651
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba nieważnych głosów
+                    </td>
+                    <td>
+                        432
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Frekwencja (%)
+                    </td>
+                    <td>
+                        55.77%
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <table>
+                <thead>
+                <tr>
+                    <td>
+                        <b>Kandydat</b>
+                    </td>
+                    <td>
+                        <b>Głosy</b>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td>
+                        Dariusz Maciej GRABOWSKI
+                    </td>
+                    <td>
+                        236
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Piotr IKONOWICZ
+                    </td>
+                    <td>
+                        38
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Jarosław KALINOWSKI
+                    </td>
+                    <td>
+                        2537
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Marian KRZAKLEWSKI
+                    </td>
+                    <td>
+                        7323
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Aleksander KWAŚNIEWSKI
+                    </td>
+                    <td>
+                        10051
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Andrzej LEPPER
+                    </td>
+                    <td>
+                        1542
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Jan ŁOPUSZAŃSKI
+                    </td>
+                    <td>
+                        295
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Andrzej Marian OLECHOWSKI
+                    </td>
+                    <td>
+                        3876
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Bogdan PAWŁOWSKI
+                    </td>
+                    <td>
+                        39
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Lech WAŁĘSA
+                    </td>
+                    <td>
+                        235
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Tadeusz Adam WILECKI
+                    </td>
+                    <td>
+                        147
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Janusz KORWIN-MIKKE
+                    </td>
+                    <td>
+                        332
+                    </td>
+
+                </tr>
+                
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </section>
+</article>
+
+<nav class="two-lines-bottom">
+    <h4>Jednostki podrzędne</h4>
+    
+    <a href="../gminy/Harasiuki.html"> Harasiuki </a>
+    
+    <a href="../gminy/Jarocin.html"> Jarocin </a>
+    
+    <a href="../gminy/Jeżowe.html"> Jeżowe </a>
+    
+    <a href="../gminy/Krzeszów.html"> Krzeszów </a>
+    
+    <a href="../gminy/Nisko.html"> Nisko </a>
+    
+    <a href="../gminy/Rudnik nad Sanem.html"> Rudnik nad Sanem </a>
+    
+    <a href="../gminy/Ulanów.html"> Ulanów </a>
+    
+</nav>
+</body>
+</html>

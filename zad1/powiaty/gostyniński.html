@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+
+    <script type="text/javascript">
+        var dane = [
+            ['Kandydat', 'Liczba głosów'],
+            
+        ['Dariusz Maciej GRABOWSKI', 107],
+        
+        ['Piotr IKONOWICZ', 37],
+        
+        ['Jarosław KALINOWSKI', 3450],
+        
+        ['Marian KRZAKLEWSKI', 2054],
+        
+        ['Aleksander KWAŚNIEWSKI', 11324],
+        
+        ['Andrzej LEPPER', 1016],
+        
+        ['Jan ŁOPUSZAŃSKI', 75],
+        
+        ['Andrzej Marian OLECHOWSKI', 1800],
+        
+        ['Bogdan PAWŁOWSKI', 34],
+        
+        ['Lech WAŁĘSA', 128],
+        
+        ['Tadeusz Adam WILECKI', 33],
+        
+        ['Janusz KORWIN-MIKKE', 154],
+        
+        ];
+
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable(dane);
+
+            var options = {
+                title: 'Wykres kołowy',
+                backgroundColor: 'transparent',
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+
+    <title>
+        Powiat gostyniński
+    </title>
+</head>
+<body>
+<header class="jumbotron">
+    <div class="container">
+         <h1>Wybory Prezydenta RP roku 2000</h1>
+    </div>
+</header>
+<article>
+    <section>
+        <h2 class="tytul">
+            Wyniki kandydatów w powiecie gostyniński
+        </h2>
+
+        <div class="two-lines-top">
+            <div id="piechart"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>
+            Statystyka ogółem w powiecie
+        </h2>
+        <div class="table">
+            <table>
+                <tr>
+                    <td>
+                        Liczba uprawnionych do głosowania
+                    </td>
+                    <td>
+                        36806
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba wydanych kart do głosowania
+                    </td>
+                    <td>
+                        20471
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba kart wyjętych z urny
+                    </td>
+                    <td>
+                        20455
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba ważnych głosów
+                    </td>
+                    <td>
+                        20212
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba nieważnych głosów
+                    </td>
+                    <td>
+                        243
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Frekwencja (%)
+                    </td>
+                    <td>
+                        55.62%
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <table>
+                <thead>
+                <tr>
+                    <td>
+                        <b>Kandydat</b>
+                    </td>
+                    <td>
+                        <b>Głosy</b>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td>
+                        Dariusz Maciej GRABOWSKI
+                    </td>
+                    <td>
+                        107
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Piotr IKONOWICZ
+                    </td>
+                    <td>
+                        37
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Jarosław KALINOWSKI
+                    </td>
+                    <td>
+                        3450
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Marian KRZAKLEWSKI
+                    </td>
+                    <td>
+                        2054
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Aleksander KWAŚNIEWSKI
+                    </td>
+                    <td>
+                        11324
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Andrzej LEPPER
+                    </td>
+                    <td>
+                        1016
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Jan ŁOPUSZAŃSKI
+                    </td>
+                    <td>
+                        75
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Andrzej Marian OLECHOWSKI
+                    </td>
+                    <td>
+                        1800
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Bogdan PAWŁOWSKI
+                    </td>
+                    <td>
+                        34
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Lech WAŁĘSA
+                    </td>
+                    <td>
+                        128
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Tadeusz Adam WILECKI
+                    </td>
+                    <td>
+                        33
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Janusz KORWIN-MIKKE
+                    </td>
+                    <td>
+                        154
+                    </td>
+
+                </tr>
+                
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </section>
+</article>
+
+<nav class="two-lines-bottom">
+    <h4>Jednostki podrzędne</h4>
+    
+    <a href="../gminy/Gostynin.html"> Gostynin </a>
+    
+    <a href="../gminy/Gostynin gm..html"> Gostynin gm. </a>
+    
+    <a href="../gminy/Pacyna.html"> Pacyna </a>
+    
+    <a href="../gminy/Sanniki.html"> Sanniki </a>
+    
+    <a href="../gminy/Szczawin Kościelny.html"> Szczawin Kościelny </a>
+    
+</nav>
+</body>
+</html>

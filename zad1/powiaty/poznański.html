@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+
+    <script type="text/javascript">
+        var dane = [
+            ['Kandydat', 'Liczba głosów'],
+            
+        ['Dariusz Maciej GRABOWSKI', 458],
+        
+        ['Piotr IKONOWICZ', 166],
+        
+        ['Jarosław KALINOWSKI', 4430],
+        
+        ['Marian KRZAKLEWSKI', 14688],
+        
+        ['Aleksander KWAŚNIEWSKI', 71616],
+        
+        ['Andrzej LEPPER', 2472],
+        
+        ['Jan ŁOPUSZAŃSKI', 708],
+        
+        ['Andrzej Marian OLECHOWSKI', 24861],
+        
+        ['Bogdan PAWŁOWSKI', 86],
+        
+        ['Lech WAŁĘSA', 1322],
+        
+        ['Tadeusz Adam WILECKI', 149],
+        
+        ['Janusz KORWIN-MIKKE', 1733],
+        
+        ];
+
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable(dane);
+
+            var options = {
+                title: 'Wykres kołowy',
+                backgroundColor: 'transparent',
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+
+    <title>
+        Powiat poznański
+    </title>
+</head>
+<body>
+<header class="jumbotron">
+    <div class="container">
+         <h1>Wybory Prezydenta RP roku 2000</h1>
+    </div>
+</header>
+<article>
+    <section>
+        <h2 class="tytul">
+            Wyniki kandydatów w powiecie poznański
+        </h2>
+
+        <div class="two-lines-top">
+            <div id="piechart"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>
+            Statystyka ogółem w powiecie
+        </h2>
+        <div class="table">
+            <table>
+                <tr>
+                    <td>
+                        Liczba uprawnionych do głosowania
+                    </td>
+                    <td>
+                        186999
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba wydanych kart do głosowania
+                    </td>
+                    <td>
+                        124113
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba kart wyjętych z urny
+                    </td>
+                    <td>
+                        123981
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba ważnych głosów
+                    </td>
+                    <td>
+                        122689
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba nieważnych głosów
+                    </td>
+                    <td>
+                        1292
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Frekwencja (%)
+                    </td>
+                    <td>
+                        66.37%
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <table>
+                <thead>
+                <tr>
+                    <td>
+                        <b>Kandydat</b>
+                    </td>
+                    <td>
+                        <b>Głosy</b>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td>
+                        Dariusz Maciej GRABOWSKI
+                    </td>
+                    <td>
+                        458
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Piotr IKONOWICZ
+                    </td>
+                    <td>
+                        166
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Jarosław KALINOWSKI
+                    </td>
+                    <td>
+                        4430
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Marian KRZAKLEWSKI
+                    </td>
+                    <td>
+                        14688
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Aleksander KWAŚNIEWSKI
+                    </td>
+                    <td>
+                        71616
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Andrzej LEPPER
+                    </td>
+                    <td>
+                        2472
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Jan ŁOPUSZAŃSKI
+                    </td>
+                    <td>
+                        708
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Andrzej Marian OLECHOWSKI
+                    </td>
+                    <td>
+                        24861
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Bogdan PAWŁOWSKI
+                    </td>
+                    <td>
+                        86
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Lech WAŁĘSA
+                    </td>
+                    <td>
+                        1322
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Tadeusz Adam WILECKI
+                    </td>
+                    <td>
+                        149
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Janusz KORWIN-MIKKE
+                    </td>
+                    <td>
+                        1733
+                    </td>
+
+                </tr>
+                
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </section>
+</article>
+
+<nav class="two-lines-bottom">
+    <h4>Jednostki podrzędne</h4>
+    
+    <a href="../gminy/Buk.html"> Buk </a>
+    
+    <a href="../gminy/Czerwonak.html"> Czerwonak </a>
+    
+    <a href="../gminy/Dopiewo.html"> Dopiewo </a>
+    
+    <a href="../gminy/Kleszczewo.html"> Kleszczewo </a>
+    
+    <a href="../gminy/Komorniki.html"> Komorniki </a>
+    
+    <a href="../gminy/Kostrzyn.html"> Kostrzyn </a>
+    
+    <a href="../gminy/Kórnik.html"> Kórnik </a>
+    
+    <a href="../gminy/Luboń.html"> Luboń </a>
+    
+    <a href="../gminy/Mosina.html"> Mosina </a>
+    
+    <a href="../gminy/Murowana Goślina.html"> Murowana Goślina </a>
+    
+    <a href="../gminy/Pobiedziska.html"> Pobiedziska </a>
+    
+    <a href="../gminy/Puszczykowo.html"> Puszczykowo </a>
+    
+    <a href="../gminy/Rokietnica.html"> Rokietnica </a>
+    
+    <a href="../gminy/Stęszew.html"> Stęszew </a>
+    
+    <a href="../gminy/Suchy Las.html"> Suchy Las </a>
+    
+    <a href="../gminy/Swarzędz.html"> Swarzędz </a>
+    
+    <a href="../gminy/Tarnowo Podgórne.html"> Tarnowo Podgórne </a>
+    
+</nav>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+
+    <script type="text/javascript">
+        var dane = [
+            ['Kandydat', 'Liczba głosów'],
+            
+        ['Dariusz Maciej GRABOWSKI', 376],
+        
+        ['Piotr IKONOWICZ', 160],
+        
+        ['Jarosław KALINOWSKI', 8646],
+        
+        ['Marian KRZAKLEWSKI', 9378],
+        
+        ['Aleksander KWAŚNIEWSKI', 42730],
+        
+        ['Andrzej LEPPER', 3871],
+        
+        ['Jan ŁOPUSZAŃSKI', 814],
+        
+        ['Andrzej Marian OLECHOWSKI', 6723],
+        
+        ['Bogdan PAWŁOWSKI', 77],
+        
+        ['Lech WAŁĘSA', 516],
+        
+        ['Tadeusz Adam WILECKI', 141],
+        
+        ['Janusz KORWIN-MIKKE', 638],
+        
+        ];
+
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable(dane);
+
+            var options = {
+                title: 'Wykres kołowy',
+                backgroundColor: 'transparent',
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+
+    <title>
+        Powiat kielecki
+    </title>
+</head>
+<body>
+<header class="jumbotron">
+    <div class="container">
+         <h1>Wybory Prezydenta RP roku 2000</h1>
+    </div>
+</header>
+<article>
+    <section>
+        <h2 class="tytul">
+            Wyniki kandydatów w powiecie kielecki
+        </h2>
+
+        <div class="two-lines-top">
+            <div id="piechart"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>
+            Statystyka ogółem w powiecie
+        </h2>
+        <div class="table">
+            <table>
+                <tr>
+                    <td>
+                        Liczba uprawnionych do głosowania
+                    </td>
+                    <td>
+                        140832
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba wydanych kart do głosowania
+                    </td>
+                    <td>
+                        75306
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba kart wyjętych z urny
+                    </td>
+                    <td>
+                        75275
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba ważnych głosów
+                    </td>
+                    <td>
+                        74070
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba nieważnych głosów
+                    </td>
+                    <td>
+                        1205
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Frekwencja (%)
+                    </td>
+                    <td>
+                        53.47%
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <table>
+                <thead>
+                <tr>
+                    <td>
+                        <b>Kandydat</b>
+                    </td>
+                    <td>
+                        <b>Głosy</b>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td>
+                        Dariusz Maciej GRABOWSKI
+                    </td>
+                    <td>
+                        376
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Piotr IKONOWICZ
+                    </td>
+                    <td>
+                        160
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Jarosław KALINOWSKI
+                    </td>
+                    <td>
+                        8646
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Marian KRZAKLEWSKI
+                    </td>
+                    <td>
+                        9378
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Aleksander KWAŚNIEWSKI
+                    </td>
+                    <td>
+                        42730
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Andrzej LEPPER
+                    </td>
+                    <td>
+                        3871
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Jan ŁOPUSZAŃSKI
+                    </td>
+                    <td>
+                        814
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Andrzej Marian OLECHOWSKI
+                    </td>
+                    <td>
+                        6723
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Bogdan PAWŁOWSKI
+                    </td>
+                    <td>
+                        77
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Lech WAŁĘSA
+                    </td>
+                    <td>
+                        516
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Tadeusz Adam WILECKI
+                    </td>
+                    <td>
+                        141
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Janusz KORWIN-MIKKE
+                    </td>
+                    <td>
+                        638
+                    </td>
+
+                </tr>
+                
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </section>
+</article>
+
+<nav class="two-lines-bottom">
+    <h4>Jednostki podrzędne</h4>
+    
+    <a href="../gminy/Bieliny.html"> Bieliny </a>
+    
+    <a href="../gminy/Bodzentyn.html"> Bodzentyn </a>
+    
+    <a href="../gminy/Chęciny.html"> Chęciny </a>
+    
+    <a href="../gminy/Chmielnik.html"> Chmielnik </a>
+    
+    <a href="../gminy/Daleszyce.html"> Daleszyce </a>
+    
+    <a href="../gminy/Górno.html"> Górno </a>
+    
+    <a href="../gminy/Łagów.html"> Łagów </a>
+    
+    <a href="../gminy/Łopuszno.html"> Łopuszno </a>
+    
+    <a href="../gminy/Masłów.html"> Masłów </a>
+    
+    <a href="../gminy/Miedziana Góra.html"> Miedziana Góra </a>
+    
+    <a href="../gminy/Mniów.html"> Mniów </a>
+    
+    <a href="../gminy/Morawica.html"> Morawica </a>
+    
+    <a href="../gminy/Nowa Słupia.html"> Nowa Słupia </a>
+    
+    <a href="../gminy/Piekoszów.html"> Piekoszów </a>
+    
+    <a href="../gminy/Pierzchnica.html"> Pierzchnica </a>
+    
+    <a href="../gminy/Raków.html"> Raków </a>
+    
+    <a href="../gminy/Sitkówka-Nowiny.html"> Sitkówka-Nowiny </a>
+    
+    <a href="../gminy/Strawczyn.html"> Strawczyn </a>
+    
+    <a href="../gminy/Zagnańsk.html"> Zagnańsk </a>
+    
+</nav>
+</body>
+</html>

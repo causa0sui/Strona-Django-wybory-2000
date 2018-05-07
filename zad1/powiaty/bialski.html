@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+
+    <script type="text/javascript">
+        var dane = [
+            ['Kandydat', 'Liczba głosów'],
+            
+        ['Dariusz Maciej GRABOWSKI', 208],
+        
+        ['Piotr IKONOWICZ', 143],
+        
+        ['Jarosław KALINOWSKI', 9432],
+        
+        ['Marian KRZAKLEWSKI', 7643],
+        
+        ['Aleksander KWAŚNIEWSKI', 21723],
+        
+        ['Andrzej LEPPER', 3867],
+        
+        ['Jan ŁOPUSZAŃSKI', 450],
+        
+        ['Andrzej Marian OLECHOWSKI', 4716],
+        
+        ['Bogdan PAWŁOWSKI', 59],
+        
+        ['Lech WAŁĘSA', 478],
+        
+        ['Tadeusz Adam WILECKI', 137],
+        
+        ['Janusz KORWIN-MIKKE', 360],
+        
+        ];
+
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable(dane);
+
+            var options = {
+                title: 'Wykres kołowy',
+                backgroundColor: 'transparent',
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+
+    <title>
+        Powiat bialski
+    </title>
+</head>
+<body>
+<header class="jumbotron">
+    <div class="container">
+         <h1>Wybory Prezydenta RP roku 2000</h1>
+    </div>
+</header>
+<article>
+    <section>
+        <h2 class="tytul">
+            Wyniki kandydatów w powiecie bialski
+        </h2>
+
+        <div class="two-lines-top">
+            <div id="piechart"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>
+            Statystyka ogółem w powiecie
+        </h2>
+        <div class="table">
+            <table>
+                <tr>
+                    <td>
+                        Liczba uprawnionych do głosowania
+                    </td>
+                    <td>
+                        87520
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba wydanych kart do głosowania
+                    </td>
+                    <td>
+                        49902
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba kart wyjętych z urny
+                    </td>
+                    <td>
+                        49858
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba ważnych głosów
+                    </td>
+                    <td>
+                        49216
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba nieważnych głosów
+                    </td>
+                    <td>
+                        642
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Frekwencja (%)
+                    </td>
+                    <td>
+                        57.02%
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <table>
+                <thead>
+                <tr>
+                    <td>
+                        <b>Kandydat</b>
+                    </td>
+                    <td>
+                        <b>Głosy</b>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td>
+                        Dariusz Maciej GRABOWSKI
+                    </td>
+                    <td>
+                        208
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Piotr IKONOWICZ
+                    </td>
+                    <td>
+                        143
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Jarosław KALINOWSKI
+                    </td>
+                    <td>
+                        9432
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Marian KRZAKLEWSKI
+                    </td>
+                    <td>
+                        7643
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Aleksander KWAŚNIEWSKI
+                    </td>
+                    <td>
+                        21723
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Andrzej LEPPER
+                    </td>
+                    <td>
+                        3867
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Jan ŁOPUSZAŃSKI
+                    </td>
+                    <td>
+                        450
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Andrzej Marian OLECHOWSKI
+                    </td>
+                    <td>
+                        4716
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Bogdan PAWŁOWSKI
+                    </td>
+                    <td>
+                        59
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Lech WAŁĘSA
+                    </td>
+                    <td>
+                        478
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Tadeusz Adam WILECKI
+                    </td>
+                    <td>
+                        137
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Janusz KORWIN-MIKKE
+                    </td>
+                    <td>
+                        360
+                    </td>
+
+                </tr>
+                
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </section>
+</article>
+
+<nav class="two-lines-bottom">
+    <h4>Jednostki podrzędne</h4>
+    
+    <a href="../gminy/Biała Podlaska gm..html"> Biała Podlaska gm. </a>
+    
+    <a href="../gminy/Drelów.html"> Drelów </a>
+    
+    <a href="../gminy/Janów Podlaski.html"> Janów Podlaski </a>
+    
+    <a href="../gminy/Kodeń.html"> Kodeń </a>
+    
+    <a href="../gminy/Konstantynów.html"> Konstantynów </a>
+    
+    <a href="../gminy/Leśna Podlaska.html"> Leśna Podlaska </a>
+    
+    <a href="../gminy/Łomazy.html"> Łomazy </a>
+    
+    <a href="../gminy/Międzyrzec Podlaski.html"> Międzyrzec Podlaski </a>
+    
+    <a href="../gminy/Międzyrzec Podlaski gm..html"> Międzyrzec Podlaski gm. </a>
+    
+    <a href="../gminy/Piszczac.html"> Piszczac </a>
+    
+    <a href="../gminy/Rokitno.html"> Rokitno </a>
+    
+    <a href="../gminy/Rossosz.html"> Rossosz </a>
+    
+    <a href="../gminy/Sławatycze.html"> Sławatycze </a>
+    
+    <a href="../gminy/Sosnówka.html"> Sosnówka </a>
+    
+    <a href="../gminy/Terespol.html"> Terespol </a>
+    
+    <a href="../gminy/Terespol gm..html"> Terespol gm. </a>
+    
+    <a href="../gminy/Tuczna.html"> Tuczna </a>
+    
+    <a href="../gminy/Wisznice.html"> Wisznice </a>
+    
+    <a href="../gminy/Zalesie.html"> Zalesie </a>
+    
+</nav>
+</body>
+</html>

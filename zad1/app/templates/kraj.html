@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+
+    <script type="text/javascript">
+
+        var dane = [
+            ['Kandydat', 'Liczba głosów'],
+            {% for kandydat, glosy in gmina['wyniki'].items() %}
+        ['{{ kandydat }}', {{ glosy }}],
+        {% endfor %}
+        ];
+
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable(dane);
+
+            var options = {
+                title: 'Wykres kołowy',
+                backgroundColor: 'transparent',
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+        google.charts.load('current', {
+       'packages': ['geochart'],
+       // Note: you will need to get a mapsApiKey for your project.
+       // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+       'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+     });
+     google.charts.setOnLoadCallback(drawMarkersMap);
+
+      function drawMarkersMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Siedziba województwa',   'Liczba uprawnionych'],
+        ['Mazowieckie',  3948464],
+        ['Wielkopolskie',    2493157],
+        ['Lodzkie',      2052376],
+        ['Małopolskie',    2395210],
+        ['Śląskie',  3695358],
+        ['Kujawsko-Pomorskie', 607906],
+        ['Lubelskie', 1567120],
+        ['Dolnośląskie',   2258296],
+        ['Lubuskie', 1682020],
+        ['Opolskie',     812320],
+        ['Podkarpackie',   1552767],
+        ['Podlaskie', 909628],
+        ['Pomorskie',    1618898],
+        ['Świętorzystkie',    1009207],
+        ['Warmińsko-Mazurskie',   1073754],
+        ['Zachodniopomorskie',    1294300]
+      ]);
+
+      var options = {
+        region: 'PL',
+        displayMode: 'markers',
+        backgroundColor: 'transparent',
+        colorAxis: {colors: ['green', 'blue']}
+      };
+
+      var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    };
+
+    </script>
+
+
+    <title>
+        {{typ}} {{ gmina['nazwa'] }}
+    </title>
+</head>
+<body>
+
+<header class="jumbotron">
+    <div class="container">
+         <h1>Wybory Prezydenta RP roku 2000</h1>
+    </div>
+</header>
+<article>
+    <section>
+        <h2 class="tytul">
+            Wyniki kandydatów w {{typ_1}} {{ gmina['nazwa'] }}
+        </h2>
+
+        <div class="two-lines-top">
+            <div id="piechart"></div>
+            <div id="chart_div"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>
+            Statystyka ogółem w {{typ_1}}
+        </h2>
+        <div class="table">
+            <table>
+                <tr>
+                    <td>
+                        Liczba uprawnionych do głosowania
+                    </td>
+                    <td>
+                        {{gmina['uprawnieni']}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba wydanych kart do głosowania
+                    </td>
+                    <td>
+                        {{ gmina['karty_wydane'] }}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba kart wyjętych z urny
+                    </td>
+                    <td>
+                        {{ gmina['głosy_oddane'] }}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba ważnych głosów
+                    </td>
+                    <td>
+                        {{gmina['głosy_ważne']}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Liczba nieważnych głosów
+                    </td>
+                    <td>
+                        {{gmina['głosy_nieważne']}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Frekwencja (%)
+                    </td>
+                    <td>
+                        {{ frekwencja }}%
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <table>
+                <thead>
+                <tr>
+                    <td>
+                        <b>Kandydat</b>
+                    </td>
+                    <td>
+                        <b>Głosy</b>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                {% for kandydat, glosy in gmina['wyniki'].items() %}
+                <tr>
+                    <td>
+                        {{ kandydat }}
+                    </td>
+                    <td>
+                        {{ glosy }}
+                    </td>
+
+                </tr>
+                {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </section>
+</article>
+
+<nav class="two-lines-bottom">
+    <h4>Jednostki podrzędne</h4>
+    {% for skladowa in skladowe.values() %}
+    <a href="{{folder}}/{{skladowa['nazwa']}}.html"> {{skladowa['nazwa']}} </a>
+    {% endfor %}
+</nav>
+</body>
+</html>
